@@ -35,4 +35,6 @@ jobs:
         context: .
         file: Dockerfile
         push: true
-        tags: ghcr.io/ogibayashi/ci-tools:${{ env.TAG }}  # Dockerイメージのタグを指定
+        tags: |
+          ghcr.io/ogibayashi/ci-tools:${{ env.TAG }}
+          ghcr.io/ogibayashi/ci-tools:latest
